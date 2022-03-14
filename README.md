@@ -1,37 +1,22 @@
 # Data_display_of_2022_Beijing_Winter_Olympics
 
-#### 介绍
+#### 
+
+[![fork](https://gitee.com/yxinmiracle/pic/raw/master/imgv3.0/fork.svg)](https://gitee.com/yxinmiracle/data-display-of-2022-beijing-winter-olympics/members)
+
+[![YxinMiracle/Data_display_of_2022_Beijing_Winter_Olympics](https://gitee.com/yxinmiracle/pic/raw/master/imgv3.0/widget_card.svg)](https://gitee.com/yxinmiracle/data-display-of-2022-beijing-winter-olympics)
+
 Data visualization of 2022 Beijing Winter Olympics
 
-#### 软件架构
-软件架构说明
+#### Project Introduction
+- 基于 Flexible.js + rem 智能大屏适配 
 
+- Use Dynamic sorting column chart
 
-#### 安装教程
+- An algorithm for calculating the cumulative number of national awards is proposed
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### Show
 
-#### 使用说明
+![GIF](https://gitee.com/yxinmiracle/pic/raw/master/imgv3.0/word.gif)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![](https://gitee.com/yxinmiracle/pic/raw/master/imgv3.0/china.gif)
