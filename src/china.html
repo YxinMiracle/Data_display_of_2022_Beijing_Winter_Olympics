@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/china.css" />
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/demo2.css">
+    <link rel="stylesheet" href="css/iconfont2.css">
+
+  </head>
+
+  <body>
+    <header>
+      <h1>冬奥会数据展示-中国版
+        <a href="index.html" style="text-decoration: none;color: white;font-size: 16px"><strong>世界版</strong></a>
+        <a href="china.html" style="text-decoration: none;color: white;font-size: 16px"><strong>中国版</strong></a>
+      </h1>
+      <div class="showTime">当前时间：2020年3月17-0时54分14秒</div>
+      <script>
+        var t = null;
+        t = setTimeout(time, 1000); //開始运行
+        function time() {
+          clearTimeout(t); //清除定时器
+          dt = new Date();
+          var y = dt.getFullYear();
+          var mt = dt.getMonth() + 1;
+          var day = dt.getDate();
+          var h = dt.getHours(); //获取时
+          var m = dt.getMinutes(); //获取分
+          var s = dt.getSeconds(); //获取秒
+          document.querySelector(".showTime").innerHTML =
+            "当前时间：" +
+            y +
+            "年" +
+            mt +
+            "月" +
+            day +
+            "-" +
+            h +
+            "时" +
+            m +
+            "分" +
+            s +
+            "秒";
+          t = setTimeout(time, 1000); //设定定时器，循环运行
+        }
+      </script>
+    </header>
+    <section class="mainbox">
+      <div class="column">
+        <div class="panel bar">
+          <h2>
+            中国历届冬奥奖牌和排名趋势
+          </h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line">
+          <h2>中国个人历届累计奖牌榜</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie">
+          <h2>中国历届奖牌分比赛项目情况</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="no">
+          <div class="no-hd">
+            <ul>
+              <li>
+                <span class="yxinmiralce-icon-span iconfont icon-yueyehuaxue"></span> <br>
+                12 <span style="font-size: 16px">届</span>
+              </li>
+              <li>
+                <span class="yxinmiralce-icon-span iconfont icon-diqiu"></span><br>
+                131 <span style="font-size: 16px">名</span>
+              </li>
+              <li>
+                <span class="yxinmiralce-icon-span iconfont icon-guanjunjiangbei"></span><br>
+                96 <span style="font-size: 16px">项</span>
+              </li>
+              <li style="color: #ec8585">
+                <span class="yxinmiralce-icon-span iconfont icon-paiming"></span><br>
+                <span style="font-size: 32px">第</span> 3 <span style="font-size: 32px">名</span>
+              </li>
+            </ul>
+          </div>
+          <div class="no-bd">
+            <ul>
+              <li>中国参会届数</li>
+              <li>2022中国参会运动员数</li>
+              <li>2022中国参与比赛小项数</li>
+              <li>2022年冬奥会中国名次</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sort" style="margin-top: 15px">
+          <div class="panel sort-bar map">
+            <h2>中国历届冬奥各省获奖情况</h2>
+            <div class="map1"></div>
+            <div class="map2"></div>
+            <div class="map3"></div>
+            <div class="yxinmiracle-chart" style="z-index: 10" id="container"></div>
+
+            <div class="panel-footer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="panel bar1">
+          <h2>微博热点话题词云</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line1 monitor yxinmiracle-houjiang">
+          <h2>2022北京冬奥会奖牌榜</h2>
+          <div class="content" style="display: block;">
+            <div class="head">
+              <span class="col">所在名次</span>
+              <span class="col">国家名次</span>
+              <span class="col">总计奖牌</span>
+            </div>
+            <div class="marquee-view">
+              <div class="marquee">
+                <div class="row">
+                  <span class="col">1</span>
+                  <span class="col">挪威</span>
+                  <span class="col">37</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">2</span>
+                  <span class="col">德国</span>
+                  <span class="col">27</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col" style="color: #fdb7b7">3</span>
+                  <span class="col" style="color: #fdb7b7">中国</span>
+                  <span class="col" style="color: #fdb7b7">15</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">4</span>
+                  <span class="col">美国</span>
+                  <span class="col">25</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">5</span>
+                  <span class="col">瑞典</span>
+                  <span class="col">18</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">6</span>
+                  <span class="col">荷兰</span>
+                  <span class="col">17</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">7</span>
+                  <span class="col">奥地利</span>
+                  <span class="col">18</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">8</span>
+                  <span class="col">瑞士</span>
+                  <span class="col">14</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">9</span>
+                  <span class="col">俄罗斯奥委会</span>
+                  <span class="col">32</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">10</span>
+                  <span class="col">法国</span>
+                  <span class="col">14</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">11</span>
+                  <span class="col">加拿大</span>
+                  <span class="col">26</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">12</span>
+                  <span class="col">日本</span>
+                  <span class="col">18</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">13</span>
+                  <span class="col">意大利</span>
+                  <span class="col">17</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">14</span>
+                  <span class="col">韩国</span>
+                  <span class="col">9</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">15</span>
+                  <span class="col">斯洛文尼亚</span>
+                  <span class="col">7</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">16</span>
+                  <span class="col">芬兰</span>
+                  <span class="col">8</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">17</span>
+                  <span class="col">新西兰</span>
+                  <span class="col">3</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">18</span>
+                  <span class="col">澳大利亚</span>
+                  <span class="col">4</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">19</span>
+                  <span class="col">英国</span>
+                  <span class="col">2</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">20</span>
+                  <span class="col">匈牙利</span>
+                  <span class="col">3</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">21</span>
+                  <span class="col">比利时</span>
+                  <span class="col">2</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">22</span>
+                  <span class="col">捷克</span>
+                  <span class="col">2</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">23</span>
+                  <span class="col">斯洛伐克</span>
+                  <span class="col">2</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">24</span>
+                  <span class="col">白俄罗斯</span>
+                  <span class="col">2</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">25</span>
+                  <span class="col">西班牙</span>
+                  <span class="col">1</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">26</span>
+                  <span class="col">乌克兰</span>
+                  <span class="col">1</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">27</span>
+                  <span class="col">爱沙尼亚</span>
+                  <span class="col">1</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">28</span>
+                  <span class="col">拉脱维亚</span>
+                  <span class="col">1</span>
+                  <span class="icon-dot"></span>
+                </div>
+                <div class="row">
+                  <span class="col">29</span>
+                  <span class="col">波兰</span>
+                  <span class="col">1</span>
+                  <span class="icon-dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie1">
+          <h2>参赛运动员性别与年龄对比</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+    <script type="text/javascript" src="js/echarts-wordcloud.js"></script>
+<!--    <script src="js/echarts.min.js"></script>-->
+    <script src="js/index_china.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/my_china_map.js"></script>
+
+  </body>
+</html>
