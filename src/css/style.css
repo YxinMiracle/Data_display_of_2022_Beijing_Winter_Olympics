@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background-color: #f7f6f2;
+    overflow: hidden;}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-height: 100vmin;
+    max-width: 100vmin;
+    margin: 0 auto;}
+.globe {
+    float: right;
+margin-left: 20%;
+    height: 100vmin;
+    width: auto;
+    cursor: -webkit-grab;
+    cursor: grab;}
+globe--dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;}
+*{
+    magrin:0;
+    padding:0;
+}
+.wrapper{
+    width:780px;
+    height:370px;
+    border:0px solid black;
+    position:absolute;
+    left:3%;
+    top:-3%;
+    margin-left: 40px;
+    margin-top: 85px;
+}
+.circle{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    position: absolute;
+}
+.blue{
+    border:10px solid blue;
+}
+.blue2{
+    border:10px solid transparent;
+    z-index:2;
+}
+.black{
+    border:10px solid black;
+    left:200px;
+}
+.black2{
+    border:10px solid transparent;
+    border-bottom-color:black;
+    border-right-color:black;
+    left:200px;
+    z-index: 2;
+}
+.red{
+    border:10px solid red;
+    left:400px;
+}
+.red2{
+    border:10px solid transparent;
+    border-left-color:red;
+    left:400px;
+    z-index: 2;
+}
+.yellow{
+    border:10px solid yellow;
+    left:100px;
+    top:100px;
+}
+.green{
+    border:10px solid green;
+    left:300px;
+    top:100px;
+}
+.green2{
+    border:10px solid transparent;
+    border-left-color:green;
+    left:300px;
+    top:100px;
+    z-index: 2;
+}
